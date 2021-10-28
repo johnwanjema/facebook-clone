@@ -6,8 +6,6 @@ import { signOut,useSession } from 'next-auth/client'
 
 function Header() {
     const [session] = useSession();
-
-
     return (
         <div className="flex sticky top-0 bg-white z-50 items-center p-2 lg:px-5 shadow-md">
             {/* header left */}
@@ -41,7 +39,7 @@ function Header() {
                     layout="fixed" />
 
                 {/* profile pic */}
-                <p className="font-semibold whitespace-nowrap pr-2"> John Wanjema </p>
+                <p className="font-semibold whitespace-nowrap pr-2">{session.user.name} </p>
                 <ViewGridIcon className="icon" />
                 <ChatIcon className="icon" />
                 <BellIcon className="icon" />
