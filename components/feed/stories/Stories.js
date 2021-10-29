@@ -1,12 +1,11 @@
 import StoryCard from "./StoryCard";
 
-function stories() {
-
+function Stories() {
     const stories = [
         {
-            name: 'Felix Ivance',
-            src: "https://media-exp1.licdn.com/dms/image/C4D03AQFV0DqAcwr22w/profile-displayphoto-shrink_400_400/0/1631773953399?e=1637798400&v=beta&t=EWcTUi2IGsif6zxrBxmpuoJjaizog3cRo04wGwrP-Zs",
-            profile: "https://media-exp1.licdn.com/dms/image/C4D03AQFV0DqAcwr22w/profile-displayphoto-shrink_400_400/0/1631773953399?e=1637798400&v=beta&t=EWcTUi2IGsif6zxrBxmpuoJjaizog3cRo04wGwrP-Zs"
+            name: 'John Wanjema',
+            src: "https://media-exp1.licdn.com/dms/image/C4D03AQGDdM0JVZy4Cg/profile-displayphoto-shrink_200_200/0/1625587335732?e=1640822400&v=beta&t=3BFjo2yU48qmeMLbEJ1XFob9OatL1P9ovQW_MDV_aro",
+            profile: "https://media-exp1.licdn.com/dms/image/C4D03AQGDdM0JVZy4Cg/profile-displayphoto-shrink_200_200/0/1625587335732?e=1640822400&v=beta&t=3BFjo2yU48qmeMLbEJ1XFob9OatL1P9ovQW_MDV_aro"
         },
         {
             name: 'Elon Musk',
@@ -33,10 +32,8 @@ function stories() {
     return (
         <div>
             <div className="flex  justify-center space-x-3 mx-auto">
-                <p>qweqw</p>
             {
                 stories.map((story,key)=>(
-                    
                     // story card
                     <StoryCard key={key} name={story.name} src={story.src} profile={story.profile}/>
                 ))
@@ -46,4 +43,4 @@ function stories() {
     )
 }
 
-export default stories
+export default Stories
