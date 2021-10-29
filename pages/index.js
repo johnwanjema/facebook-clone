@@ -10,7 +10,7 @@ export default function Home({ session }) {
   return (
     <div className='h-screen bg-gray-100 overflow-hidden'>
       <Header />
-      <main className='flex'>
+      <main className='flex space-x-6'>
         <Sidebar/>
         <Feed/>
       </main>
